@@ -264,42 +264,35 @@ footer h2 {
 
 .torta1 {
     grid-area: torta1;
-    display: flex;
 }
 
 .torta2 {
     grid-area: torta2;
-    display: flex;
+
 }
 
 .torta3 {
     grid-area: torta3;
-    display: flex;
 }
 
 .torta4 {
     grid-area: torta4;
-    display: flex;
 }
 
 .torta5 {
     grid-area: torta5;
-    display: flex;
 }
 
 .torta6 {
     grid-area: torta6;
-    display: flex;
 }
 
 .torta7 {
     grid-area: torta7;
-    display: flex;
 }
 
 .torta8 {
     grid-area: torta8;
-    display: flex;
 }
 
 .tortas div img {

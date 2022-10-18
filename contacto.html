@@ -5,59 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulcenella</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="./img/Dulcenella PNG.png" alt="logo dulcenella"></a>
-        </div>
-        <nav>
-            <ul class="navBar">
-                <li><a href="./tortas.html">TORTAS</a></li>
-                <li><a href="./desayunos-y-meriendas.html">DESAYUNOS Y MERIENDA</a></li>
-                <li><a href="./mas-cosas-dulces.html">MAS COSAS DULCES</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navBar>
+            <div class="container-fluid">
+              <a class="navbar-brand ms-3" href="./index.html">
+                <img src="./img/Dulcenella PNG.png" alt="Dulcenella" width="80" height="me-auto">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end navBar navbar-text" id="navbarSupportedContent">
+                <ul class="navbar-nav m-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./tortas.html">Tortas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./desayunos-y-meriendas.html">Desayunos y Meriendas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./mas-cosas-dulces.html">Mas Cosas Dulces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="fondoImagen2">
         <h2>PONTE EN CONTACTO!</h2>
-        <form action="" class="formularioContacto">
-            <fieldset>
-                <legend>Haz tu pedido, solicita una cotización, pregunta cualqueir duda o simplemente manda un mensaje buena onda!
-                    Amamos saber de nuestros seguidores</legend>
-                <label for="Nombre">
-                    <span>Nombre</span>
-                    <input type="text">
-                </label>
-                <label for="Email">
-                    <span>Email</span>
-                    <input type="text">
-                </label>
-                <label for="Mensaje">
-                    <span> Mensaje</span>
-                    <input type="text">
-                </label>
-            </fieldset>
-            <button>ENVIAR</button>
+        <form class="formulario">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mensaje</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="botonFormulario">Enviar</button>
         </form>
     </main>
 
     <footer>
-        <section>
-            <h2>HAZ TU PEDIDO O COTIZACIÓN</h2>
-            <img src="./img/🦆 icon _envelope closed_.png" alt="logo de email">
-            <p>dulcenellareposteria@gmail.com</p>
-            <img src="./img/🦆 icon _phone_.png" alt="logo telefono">
-            <p>+54 9 11 125 4567</p>
-            <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="logo facebook"></a>
-            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="logo instagram"></a>
-        </section>
-    </footer>
+      <h2>HAZ TU PEDIDO O COTIZACIÓN</h2>
+          <div class="email">
+              <img src="./img/🦆 icon _envelope closed_.png" alt="logo de email">
+              <p>dulcenellareposteria@gmail.com</p>
+          </div>
+          <div class="telefono">
+              <img src="./img/🦆 icon _phone_.png" alt="logo telefono">
+              <p>+54 9 11 125 4567</p>
+          </div>
+      <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="logo facebook" class="faceboook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="logo instagram" class="instagram"></a>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 </html>
